@@ -81,7 +81,7 @@ def main():
     print('total trainable parameters', pytorch_total_train_params)
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=0.0001)
 
-    checkpoint_path = '/cifar10/tmp/cifar10_highest.pt'
+    checkpoint_path = '/cifar10/cifar10_highest.pt'
 
     checkpoint = torch.load(checkpoint_path, map_location='cpu')
     model.module.load_state_dict(checkpoint['net'])

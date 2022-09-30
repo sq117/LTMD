@@ -84,7 +84,7 @@ def test(args, model, device, test_loader, epoch, test_acc, test_ls):
                     'net': model.module.state_dict(),
                     'end_epoch': epoch,
                 }
-                torch.save(state, "/cifar10/tmp/cifar10_highest.pt")
+                torch.save(state, "/cifar10/cifar10_highest.pt")
 
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset), acc))
@@ -168,7 +168,7 @@ def main():
     print('total trainable parameters', pytorch_total_train_params)
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=0.0001)
 
-    checkpoint_path = '/cifar10/tmp/cifar10.pt'
+    checkpoint_path = '/cifar10/cifar10.pt'
     start_epoch = 1
     test_acc = []
     train_acc = []
@@ -194,7 +194,7 @@ def main():
                     'net': model.module.state_dict(),
                     'end_epoch': epoch,
                 }
-                torch.save(state, "cifar10/tmp/cifar10.pt")
+                torch.save(state, "cifar10/cifar10.pt")
 
                 workbook = xlsxwriter.Workbook('testaccuracy.xlsx')
                 worksheet = workbook.add_worksheet()
