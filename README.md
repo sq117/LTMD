@@ -1,7 +1,7 @@
 # LTMD
 This is the PyTorch implementation of paper: LTMD: Learning Improvement of Spiking Neural Networks with Learnable Thresholding Neurons and Moderate Dropout.
 
-Here we provide code for CIFAR10 dataset as a pre-release version. More datasets will be added later.
+Here we provide code for CIFAR10 dataset as a sample.
 
 ## Dependencies and Installation
 - Python 3.8.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
@@ -12,7 +12,7 @@ Here we provide code for CIFAR10 dataset as a pre-release version. More datasets
 ## Dataset Preparation
 As for MNIST and CIFAR10, the data can be downloaded by torchvision as in the code. The DVS-CIFAR10 is avaliable at [here](https://figshare.com/articles/dataset/CIFAR10-DVS_New/4724671/2). The N-MNIST dataset is avaliable at [here](https://www.garrickorchard.com/datasets/n-mnist).
 
-Preprocessing of splitting images of N-MNIST and DVS-CIFAR10 are provided as [dataset.py](https://github.com/sq117/LTMT/blob/main/nmnist/dataset.py) and [processing_data.py](https://github.com/sq117/LTMT/blob/main/dvscifar10/processing_data.py) in the corresponding folders.
+<!---Preprocessing of splitting images of N-MNIST and DVS-CIFAR10 are provided as [dataset.py](https://github.com/sq117/LTMT/blob/main/nmnist/dataset.py) and [processing_data.py](https://github.com/sq117/LTMT/blob/main/dvscifar10/processing_data.py) in the corresponding folders.--->
 
 ## Training and Testing
 In the corresponding directory, run following command with GPU IDs identification:
